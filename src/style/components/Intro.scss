@@ -1,0 +1,9 @@
+#intro{
+  margin: 1rem 0;
+  grid-area: intro;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

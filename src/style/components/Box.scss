@@ -1,0 +1,13 @@
+.box{
+  width: 49%;
+  border:1px solid #333;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem 0.4rem 0.4rem 0;
+  flex-direction: column;
+  p{
+    text-align: center;
+  }
+}

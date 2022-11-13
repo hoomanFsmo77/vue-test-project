@@ -1,0 +1,148 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/main.scss ***!
+  \**************************************************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header header" "intro intro intro" "box box sidebar" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+  overflow-x: hidden;
+}
+
+#box_container {
+  grid-area: box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/components/Header.scss ***!
+  \***************************************************************************************************************************/
+header {
+  grid-area: header;
+  border: 1px solid #333;
+  padding: 1rem;
+}
+header h1 {
+  color: skyblue;
+}
+/*!**************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/components/Intro.scss ***!
+  \**************************************************************************************************************************/
+#intro {
+  margin: 1rem 0;
+  grid-area: intro;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/components/Card.scss ***!
+  \*************************************************************************************************************************/
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 0.5rem;
+}
+.card .card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+.card .card_body {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+.card .card_body p {
+  line-height: 1.6;
+}
+.card .card_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.card .card_footer span {
+  margin: 0 1rem;
+}
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/components/Sidebar.scss ***!
+  \****************************************************************************************************************************/
+#sidebar {
+  grid-area: sidebar;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 0.5rem;
+}
+#sidebar .sidebar_item {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+#sidebar button {
+  margin: 0.5rem;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all 250ms ease-in-out;
+}
+
+.fade-enter-from {
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+.fade-enter-to {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-leave-from {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: scale(1.2);
+}
+/*!************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/components/Box.scss ***!
+  \************************************************************************************************************************/
+.box {
+  width: 49%;
+  border: 1px solid #333;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem 0.4rem 0.4rem 0;
+  flex-direction: column;
+}
+.box p {
+  text-align: center;
+}
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/components/Footer.scss ***!
+  \***************************************************************************************************************************/
+footer {
+  grid-area: footer;
+  padding: 0.5rem;
+  border: 1px solid #333333;
+  margin: 0.5rem 0;
+}
+footer p, footer h2 {
+  text-align: center;
+}
